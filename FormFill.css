@@ -1,0 +1,170 @@
+.form-main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+}
+.form-box {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+  gap: 30px;
+}
+
+.btn {
+  background-color: var(--purple-950);
+  padding: 10px;
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-box-date {
+  display: flex;
+  width: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-box-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box-test {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Both .expiry and .cvc are flex‐columns */
+.field {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+/* For expiry, we need a nested row for MM/YY inputs */
+.expiry-inputs {
+  display: flex;
+  gap: 0.5rem; /* space between MM and YY boxes */
+  margin-top: 0.25rem; /* a little vertical breathing room */
+}
+
+/* Style all small inputs uniformly */
+.expiry-inputs input,
+.cvc input {
+  min-width: 3ch; /* enough for 2–3 digits */
+  max-width: 5ch; /* cap so they don’t get huge */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.mm-yy input {
+  text-align: center;
+}
+
+.cvc input {
+  max-width: 20ch;
+}
+
+.cvc label {
+  margin-bottom: 4px;
+}
+
+label {
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid var(--gray-400);
+}
+
+.success-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.success {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1450px) {
+  .form-box {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .form-box {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .form-box {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1166px) {
+  .form-box {
+    width: 90%;
+    gap: 15px;
+  }
+
+  .form-main {
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 1071px) {
+  .form-box {
+    width: 120%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .form-box {
+    width: 200%;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .form-main {
+    height: 65vh;
+  }
+  .form-box {
+    width: 200%;
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .form-main {
+    height: 65vh;
+  }
+  .form-box {
+    padding: 0 30px;
+  }
+}
+
+.error {
+  color: var(--error);
+  margin: 5px 0;
+  font-size: 0.775rem;
+}
