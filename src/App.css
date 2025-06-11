@@ -1,0 +1,229 @@
+.main-pattern {
+  display: flex;
+}
+
+.main-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  background-image: url("./images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 100vh 100%;
+  height: 100vh;
+}
+
+.main-credit-logo {
+  position: absolute;
+  top: 40px;
+  left: 25px;
+}
+
+.main-credit-card {
+  position: relative;
+  left: 150px;
+  color: var(--white);
+}
+
+.main-card-input-number {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.main-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: relative;
+  top: 210px;
+}
+
+.main-card-expire {
+  position: absolute;
+  left: 380px;
+}
+
+.back {
+  position: relative;
+  left: 250px;
+}
+.main-credit-card-back {
+  position: absolute;
+  top: 110px;
+  left: 350px;
+}
+
+.card-front {
+  height: 245px;
+}
+
+.card-back {
+  height: 245px;
+}
+
+.second-card {
+  flex-grow: 20;
+}
+
+@media only screen and (max-width: 1450px) {
+  .main-credit-card {
+    left: 100px;
+  }
+
+  .back {
+    left: 200px;
+  }
+
+  .main-credit-logo {
+    top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .main-credit-card {
+    left: 50px;
+  }
+
+  .back {
+    left: 150px;
+  }
+}
+
+@media only screen and (max-width: 1166px) {
+  .main-credit-card {
+    left: 25px;
+  }
+
+  .back {
+    left: 75px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .main-pattern {
+    flex-direction: column;
+  }
+
+  .main-credit-logo {
+    top: 30px;
+  }
+  .main-card {
+    flex-direction: column;
+    height: 30vh;
+    gap: 0px;
+    background-size: 100vw;
+  }
+
+  .main-credit-card {
+    left: 200px;
+    top: 225px;
+    z-index: 50;
+  }
+
+  .back {
+    left: 300px;
+    top: -80px;
+    z-index: 1;
+  }
+
+  .card-front {
+    height: 205px;
+  }
+
+  .card-back {
+    height: 205px;
+  }
+
+  .main-card-input-number {
+    top: 130px;
+    font-size: 24px;
+  }
+
+  .main-credit-card-back {
+    left: 295px;
+    top: 89px;
+    font-size: 18px;
+  }
+
+  .main-card-bottom {
+    top: 185px;
+    font-size: 10px;
+  }
+
+  .main-card-expire {
+    left: 330px;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .back {
+    left: 225px;
+    top: -85px;
+    z-index: 1;
+  }
+
+  .front {
+    left: 100px;
+  }
+}
+@media only screen and (max-width: 636px) {
+  .back {
+    left: 185px;
+    top: -85px;
+    z-index: 1;
+  }
+
+  .front {
+    left: 60px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .main-credit-card {
+    left: 25px;
+    top: 175px;
+    z-index: 50;
+  }
+
+  .back {
+    left: 125px;
+    top: -85px;
+    z-index: 1;
+  }
+
+  .card-front {
+    height: 175px;
+  }
+
+  .card-back {
+    height: 175px;
+  }
+
+  .main-card-input-number {
+    top: 120px;
+    font-size: 18px;
+  }
+
+  .main-card-bottom {
+    top: 165px;
+    font-size: 10px;
+  }
+
+  .main-card-expire {
+    left: 270px;
+  }
+
+  .main-credit-card-back {
+    left: 250px;
+    top: 75px;
+    font-size: 18px;
+  }
+
+  .second-card {
+    flex-grow: 0;
+  }
+}
