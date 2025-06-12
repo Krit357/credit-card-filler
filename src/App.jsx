@@ -13,6 +13,7 @@ function App() {
 
   return (
     <div className="main-pattern">
+      {/* mainPage */}
       <div className="main-card">
         <div className="main-credit-card front">
           <svg
