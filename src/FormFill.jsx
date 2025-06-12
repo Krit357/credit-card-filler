@@ -59,14 +59,10 @@ const FormFill = ({
         expiryYear,
         cvc,
       });
+      setSubmit(!submit);
       switchPage();
     }
     console.log(submit);
-    setCardName("");
-    setCardNumber("");
-    setExpiryMonth("");
-    setExpiryYear("");
-    setCvc("");
   };
 
   const handleChange = (e) => {
@@ -105,6 +101,13 @@ const FormFill = ({
 
   const switchPage = () => {
     setSubmit(!submit);
+    if (submit) {
+      setCardName("");
+      setCardNumber("");
+      setExpiryMonth("");
+      setExpiryYear("");
+      setCvc("");
+    }
   };
   return (
     <div className="form-main">
@@ -224,7 +227,7 @@ const FormFill = ({
                 gradientUnits="userSpaceOnUse"
               >
                 <stop stopColor="#6348FE" />
-                <stop offset="1" stop-color="#610595" />
+                <stop offset="1" stopColor="#610595" />
               </linearGradient>
             </defs>
           </svg>
