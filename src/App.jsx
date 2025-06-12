@@ -1,7 +1,7 @@
 import "./App.css";
 import cardFront from "./images/bg-card-front.png";
 import cardBack from "./images/bg-card-back.png";
-import FormFill from "./components/FormFill";
+import FormFill from "./FormFill";
 import { useState } from "react";
 
 function App() {
