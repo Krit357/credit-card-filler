@@ -61,8 +61,12 @@ const FormFill = ({
       });
       switchPage();
     }
-
     console.log(submit);
+    setCardName("");
+    setCardNumber("");
+    setExpiryMonth("");
+    setExpiryYear("");
+    setCvc("");
   };
 
   const handleChange = (e) => {
